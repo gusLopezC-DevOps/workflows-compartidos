@@ -40,7 +40,7 @@ jobs:
   build_image:
     strategy:
       matrix:
-        runner: ["ubuntu-latest", "blacksmith-4vcpu-ubuntu-2404"]
+        runner: ["blacksmith-4vcpu-ubuntu-2404", "blacksmith-4vcpu-ubuntu-2404"]
       fail-fast: false  # Permite que los jobs continúen incluso si uno falla
     
     runs-on: ${{ matrix.runner }}
